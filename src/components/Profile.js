@@ -37,6 +37,18 @@ const Profile = () => {
                                 <div className="main-older-post-marker"> </div>
                                 <p className="main-older-post-text">It's my first program in jsx!</p>
                             </div>
+                            <div className="main-older-post">
+                                <div className="main-older-post-marker"> </div>
+                                <p className="main-older-post-text">It's my first program in jsx!</p>
+                            </div>
+                            <div className="main-older-post">
+                                <div className="main-older-post-marker"> </div>
+                                <p className="main-older-post-text">It's my first program in jsx!</p>
+                            </div>
+                            <div className="main-older-post">
+                                <div className="main-older-post-marker"> </div>
+                                <p className="main-older-post-text">It's my first program in jsx!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
