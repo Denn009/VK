@@ -1,0 +1,9 @@
+.header{
+    background: #299898;
+    height: 80px;
+    grid-column: 1/-1;
+}
+.img_header{
+    padding-left: 50px;
+    width: 80px;
+}

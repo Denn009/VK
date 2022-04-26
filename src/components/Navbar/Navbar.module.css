@@ -1,0 +1,18 @@
+.wrapper_nav{
+    background: #299898;
+    height: 800px;
+}
+.nav{
+    list-style-type: none;
+}
+.nav_link{
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+.nav_item{
+    padding-top: 12px;
+}
+.nav_item:last-child{
+    padding-top: 80px;
+}

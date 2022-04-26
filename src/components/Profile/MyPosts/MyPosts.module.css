@@ -1,0 +1,35 @@
+.posts{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/-1;
+}
+.post_header{
+    font-size: 32px;
+}
+.text_input{
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    font-size: 18px;
+    background: #e7e7e7;
+    border: none;
+    width: 80%;
+    height: 60px;
+}
+.send_button{
+    margin-top: 30px;
+    margin-left: 70%;
+    border: none;
+    background: #299898;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 130px;
+    border-radius: 20px;
+}
+.send_button:hover{
+    opacity: 0.8;
+}
+.send_button:active {
+    opacity: 0.6;
+}
+

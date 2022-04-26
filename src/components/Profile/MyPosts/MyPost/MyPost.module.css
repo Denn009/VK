@@ -1,0 +1,15 @@
+.post{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.post_marker{
+    background: #299898;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.post_text{
+    font-size: 24px;
+}
