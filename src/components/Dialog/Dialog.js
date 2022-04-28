@@ -1,22 +1,7 @@
 import React from "react";
 import s from "./Dialog.module.css"
-import App from "../../App";
-import {NavLink} from "react-router-dom";
-
-const DialogItem = (props) => {
-    return (
-        <div className={s.dialog + " " + s.active}>
-            <NavLink to={"/dialogs/" + props.id} className = { navData => navData.isActive ? s.active : s.link }>{props.name}</NavLink>
-        </div>
-    )
-}
-
-const Message = (props) => {
-    return(
-            <div className={s.message}>{props.text}</div>
-    )
-}
-
+import DialogItem from "./DialogItem/DialogItem"
+import Message from "./Message/Message";
 
 const Dialog = () => {
 
@@ -29,23 +14,24 @@ const Dialog = () => {
         {name: "Света", id: "6"},
     ]
 
+    let messagesData = [
+        {message: "hdddi", id: "1"},
+        {message: "hello", id: "2"},
+        {message: "What the F..", id: "3"},
+        {message: "ololo", id: "4"},
+        {message: "Oy, sheet", id: "5"},
+    ]
+
+    let dialogsElement = dialogData.map(d => <DialogItem name = {d.name} id = {d.id}/>)
+    let messagesElement = messagesData.map(m => <Message message = {m.message} id ={m.id}/>)
+
     return (
         <div className={s.wrapper}>
             <div className={s.user_names}>
-                <div className={s.item_name}><DialogItem name = {dialogData[0].name} id = {dialogData[0].id}/></div>
-                <div className={s.item_name}><DialogItem name = {dialogData[1].name} id = {dialogData[1].id}/></div>
-                <div className={s.item_name}><DialogItem name = {dialogData[2].name} id = {dialogData[2].id}/></div>
-                <div className={s.item_name}><DialogItem name = {dialogData[3].name} id = {dialogData[3].id}/></div>
-                <div className={s.item_name}><DialogItem name = {dialogData[4].name} id = {dialogData[4].id}/></div>
-                <div className={s.item_name}><DialogItem name = {dialogData[5].name} id = {dialogData[5].id}/></div>
+                {dialogsElement}
             </div>
             <div className={s.messegers}>
-                <div className={s.item_message}><Message text={"hi"}/></div>
-                <div className={s.item_message}><Message text={"hi"}/></div>
-                <div className={s.item_message}><Message text={"hi"}/></div>
-                <div className={s.item_message}><Message text={"hi"}/></div>
-                <div className={s.item_message}><Message text={"hi"}/></div>
-                <div className={s.item_message}><Message text={"hi"}/></div>
+                {messagesElement}
             </div>
         </div>
     )

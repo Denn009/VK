@@ -1,0 +1,15 @@
+.link{
+    color: #299898;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.link:hover{
+    opacity: 0.6;
+}
+.link:active{
+    opacity: 0.4;
+}
+.active{
+    color: #575757;;
+    text-decoration: none;
+}

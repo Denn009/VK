@@ -7,7 +7,7 @@ const MyPosts = (props) => {
             <div className={s.post}>
                 <div className={s.post_marker}></div>
                 <p className={s.post_text}>
-                    {props.message}
+                    {props.post}
                 </p>
             </div>
         </div>
