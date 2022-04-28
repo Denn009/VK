@@ -1,0 +1,24 @@
+.img_main{
+    width: 100%;
+    max-height: 200px;
+}
+.main_profile{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 0.3fr 1fr;
+}
+.profile_img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.main_text_header{
+    margin: 0 0 20px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+.main_text{
+    margin: 0;
+    font-size: 26px;
+}
