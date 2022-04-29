@@ -1,6 +1,7 @@
 .app-wrapper{
+    box-sizing: border-box;
     margin: 0 auto;
-    width: 70%;
+    max-width: 60%;
     display: grid;
     grid-template-columns: 200px 1fr;
     background: #ffffff;

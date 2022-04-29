@@ -3,27 +3,12 @@ import s from "./Dialog.module.css"
 import DialogItem from "./DialogItem/DialogItem"
 import Message from "./Message/Message";
 
-const Dialog = () => {
+const Dialog = (props) => {
 
-    let dialogData = [
-        {name: "Витя", id: "1"},
-        {name: "Алексей", id: "2"},
-        {name: "Оксана", id: "3"},
-        {name: "Денис", id: "4"},
-        {name: "Олег", id: "5"},
-        {name: "Света", id: "6"},
-    ]
 
-    let messagesData = [
-        {message: "hdddi", id: "1"},
-        {message: "hello", id: "2"},
-        {message: "What the F..", id: "3"},
-        {message: "ololo", id: "4"},
-        {message: "Oy, sheet", id: "5"},
-    ]
 
-    let dialogsElement = dialogData.map(d => <DialogItem name = {d.name} id = {d.id}/>)
-    let messagesElement = messagesData.map(m => <Message message = {m.message} id ={m.id}/>)
+    let dialogsElement = props.dialog.map(d => <DialogItem dialog = {d.dialog} id = {d.id}/>)
+    let messagesElement = props.message.map(m => <Message message = {m.message} id ={m.id}/>)
 
     return (
         <div className={s.wrapper}>

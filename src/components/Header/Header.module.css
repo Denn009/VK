@@ -2,6 +2,7 @@
     background: #299898;
     height: 90px;
     grid-column: 1/-1;
+    width: 100%;
 }
 .img_header{
     padding-left: 30px;

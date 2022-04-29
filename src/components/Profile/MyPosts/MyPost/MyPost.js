@@ -9,6 +9,9 @@ const MyPosts = (props) => {
                 <p className={s.post_text}>
                     {props.post}
                 </p>
+                <div className={s.likesCounter}>
+                    {props.likesCount}
+                </div>
             </div>
         </div>
     )
